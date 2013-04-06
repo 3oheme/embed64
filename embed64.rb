@@ -8,5 +8,11 @@ end
 source_path = ARGV[0]
 target_path = ARGV[1]
 
-puts source_path
-puts target_path
+load_source_file
+
+for each_img_tag
+  get_src
+  load_image
+  change_src_to_base_path
+
+save_source_to_target
